@@ -1,0 +1,461 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\2.X.production.o
+cinit CODE 0 13 13 2A 2
+text1 CODE 0 47 47 AF 2
+text2 CODE 0 F6 F6 4F 2
+text3 CODE 0 145 145 38 2
+text4 CODE 0 1C8 1C8 15 2
+text5 CODE 0 20C 20C 8 2
+maintext CODE 0 1A6 1A6 22 2
+cstackCOMMON COMMON 1 70 70 7 1
+cstackBANK0 BANK0 1 66 66 5 1
+inittext CODE 0 1F1 1F1 13 2
+intentry CODE 0 4 4 C 2
+bssBANK0 BANK0 1 49 49 1D 1
+idataBANK0 CODE 0 17D 17D 29 2
+idataBANK1 CODE 0 1DD 1DD 14 2
+dataBANK0 BANK0 1 20 20 29 1
+dataBANK1 BANK1 1 A0 A0 14 1
+functab ENTRY 0 3D 3D A 2
+clrtext CODE 0 204 204 8 2
+bssCOMMON COMMON 1 77 77 3 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\mosta\AppData\Local\Temp\s12g.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 10 10 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6B-6F 1
+RAM B4-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 6B-6F 1
+BANK1 B4-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 214-1FFF 2
+ENTRY 3-3 2
+ENTRY 214-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 214-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 214-1FFF 2
+STRING 3-3 2
+STRING 214-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\2.X.production.o
+13 cinit CODE >1710:C:\Users\mosta\AppData\Local\Temp\s12g.s
+13 cinit CODE >1713:C:\Users\mosta\AppData\Local\Temp\s12g.s
+13 cinit CODE >1813:C:\Users\mosta\AppData\Local\Temp\s12g.s
+14 cinit CODE >1814:C:\Users\mosta\AppData\Local\Temp\s12g.s
+15 cinit CODE >1815:C:\Users\mosta\AppData\Local\Temp\s12g.s
+16 cinit CODE >1816:C:\Users\mosta\AppData\Local\Temp\s12g.s
+17 cinit CODE >1817:C:\Users\mosta\AppData\Local\Temp\s12g.s
+18 cinit CODE >1818:C:\Users\mosta\AppData\Local\Temp\s12g.s
+19 cinit CODE >1819:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1A cinit CODE >1820:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1B cinit CODE >1821:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1C cinit CODE >1822:C:\Users\mosta\AppData\Local\Temp\s12g.s
+21 cinit CODE >1826:C:\Users\mosta\AppData\Local\Temp\s12g.s
+22 cinit CODE >1827:C:\Users\mosta\AppData\Local\Temp\s12g.s
+23 cinit CODE >1828:C:\Users\mosta\AppData\Local\Temp\s12g.s
+24 cinit CODE >1829:C:\Users\mosta\AppData\Local\Temp\s12g.s
+25 cinit CODE >1830:C:\Users\mosta\AppData\Local\Temp\s12g.s
+26 cinit CODE >1831:C:\Users\mosta\AppData\Local\Temp\s12g.s
+27 cinit CODE >1832:C:\Users\mosta\AppData\Local\Temp\s12g.s
+28 cinit CODE >1833:C:\Users\mosta\AppData\Local\Temp\s12g.s
+29 cinit CODE >1834:C:\Users\mosta\AppData\Local\Temp\s12g.s
+2E cinit CODE >1853:C:\Users\mosta\AppData\Local\Temp\s12g.s
+2F cinit CODE >1854:C:\Users\mosta\AppData\Local\Temp\s12g.s
+30 cinit CODE >1855:C:\Users\mosta\AppData\Local\Temp\s12g.s
+31 cinit CODE >1856:C:\Users\mosta\AppData\Local\Temp\s12g.s
+36 cinit CODE >1859:C:\Users\mosta\AppData\Local\Temp\s12g.s
+37 cinit CODE >1860:C:\Users\mosta\AppData\Local\Temp\s12g.s
+38 cinit CODE >1861:C:\Users\mosta\AppData\Local\Temp\s12g.s
+39 cinit CODE >1867:C:\Users\mosta\AppData\Local\Temp\s12g.s
+39 cinit CODE >1869:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3A cinit CODE >1870:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3D functab ENTRY >3000:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3D functab ENTRY >3004:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3D functab ENTRY >3005:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3E functab ENTRY >3007:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3E functab ENTRY >3008:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3E functab ENTRY >3009:C:\Users\mosta\AppData\Local\Temp\s12g.s
+3F functab ENTRY >3010:C:\Users\mosta\AppData\Local\Temp\s12g.s
+40 functab ENTRY >3011:C:\Users\mosta\AppData\Local\Temp\s12g.s
+41 functab ENTRY >3012:C:\Users\mosta\AppData\Local\Temp\s12g.s
+42 functab ENTRY >3013:C:\Users\mosta\AppData\Local\Temp\s12g.s
+43 functab ENTRY >3015:C:\Users\mosta\AppData\Local\Temp\s12g.s
+43 functab ENTRY >3016:C:\Users\mosta\AppData\Local\Temp\s12g.s
+44 functab ENTRY >3019:C:\Users\mosta\AppData\Local\Temp\s12g.s
+44 functab ENTRY >3020:C:\Users\mosta\AppData\Local\Temp\s12g.s
+4 intentry CODE >7:C:\Users\mosta\Downloads\PIC\My Projects\2.X\interrupt.c
+20C text5 CODE >6:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Gpt.c
+20C text5 CODE >9:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Gpt.c
+212 text5 CODE >10:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Gpt.c
+213 text5 CODE >11:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Gpt.c
+1C8 text4 CODE >7:C:\Users\mosta\Downloads\PIC\My Projects\2.X\interrupt.c
+1C8 text4 CODE >9:C:\Users\mosta\Downloads\PIC\My Projects\2.X\interrupt.c
+1CC text4 CODE >11:C:\Users\mosta\Downloads\PIC\My Projects\2.X\interrupt.c
+1D2 text4 CODE >13:C:\Users\mosta\Downloads\PIC\My Projects\2.X\interrupt.c
+145 text3 CODE >42:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+148 text3 CODE >43:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+148 text3 CODE >44:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+149 text3 CODE >45:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+15A text3 CODE >46:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+163 text3 CODE >47:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+177 text3 CODE >48:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+17A text3 CODE >50:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+17B text3 CODE >51:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+17C text3 CODE >53:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+F6 text2 CODE >26:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+F9 text2 CODE >27:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+F9 text2 CODE >28:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+10A text2 CODE >29:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+10F text2 CODE >30:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+127 text2 CODE >31:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+12C text2 CODE >32:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+144 text2 CODE >34:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Dio.c
+47 text1 CODE >17:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+4A text1 CODE >19:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+4A text1 CODE >20:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+58 text1 CODE >21:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+65 text1 CODE >24:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+6D text1 CODE >26:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+82 text1 CODE >28:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+8B text1 CODE >29:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+9F text1 CODE >30:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+A0 text1 CODE >31:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+A8 text1 CODE >32:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+BE text1 CODE >35:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+C6 text1 CODE >36:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+DA text1 CODE >38:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+E3 text1 CODE >39:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+E9 text1 CODE >40:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+EA text1 CODE >41:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+F2 text1 CODE >42:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+F5 text1 CODE >54:C:\Users\mosta\Downloads\PIC\My Projects\2.X\Port.c
+1A6 maintext CODE >112:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+1A6 maintext CODE >113:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+1AC maintext CODE >114:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+1B2 maintext CODE >115:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+1B2 maintext CODE >117:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+1BD maintext CODE >118:C:\Users\mosta\Downloads\PIC\My Projects\2.X\main.c
+204 clrtext CODE >1840:C:\Users\mosta\AppData\Local\Temp\s12g.s
+204 clrtext CODE >1841:C:\Users\mosta\AppData\Local\Temp\s12g.s
+205 clrtext CODE >1842:C:\Users\mosta\AppData\Local\Temp\s12g.s
+205 clrtext CODE >1843:C:\Users\mosta\AppData\Local\Temp\s12g.s
+206 clrtext CODE >1844:C:\Users\mosta\AppData\Local\Temp\s12g.s
+207 clrtext CODE >1845:C:\Users\mosta\AppData\Local\Temp\s12g.s
+208 clrtext CODE >1846:C:\Users\mosta\AppData\Local\Temp\s12g.s
+209 clrtext CODE >1847:C:\Users\mosta\AppData\Local\Temp\s12g.s
+20A clrtext CODE >1848:C:\Users\mosta\AppData\Local\Temp\s12g.s
+20B clrtext CODE >1849:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F1 inittext CODE >1787:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F1 inittext CODE >1788:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F2 inittext CODE >1789:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F3 inittext CODE >1790:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F4 inittext CODE >1791:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F5 inittext CODE >1798:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1F5 inittext CODE >1799:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FA inittext CODE >1800:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FB inittext CODE >1801:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FC inittext CODE >1802:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FD inittext CODE >1803:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FE inittext CODE >1804:C:\Users\mosta\AppData\Local\Temp\s12g.s
+1FF inittext CODE >1805:C:\Users\mosta\AppData\Local\Temp\s12g.s
+200 inittext CODE >1806:C:\Users\mosta\AppData\Local\Temp\s12g.s
+201 inittext CODE >1807:C:\Users\mosta\AppData\Local\Temp\s12g.s
+202 inittext CODE >1808:C:\Users\mosta\AppData\Local\Temp\s12g.s
+203 inittext CODE >1809:C:\Users\mosta\AppData\Local\Temp\s12g.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\2.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 214 0 ABS 0 - -
+__Hspace_1 B4 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+Dio_ReadChannel@output 69 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_ADIE 466 0 ABS 0 - dist/default/production\2.X.production.o
+_ADIF 66 0 ABS 0 - dist/default/production\2.X.production.o
+_PEIE 5E 0 ABS 0 - dist/default/production\2.X.production.o
+_TMR1 E 0 ABS 0 - dist/default/production\2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\mosta\AppData\Local\Temp\s12g.o
+_main 34C 0 CODE 0 maintext dist/default/production\2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\2.X.production.o
+start 20 0 CODE 0 init C:\Users\mosta\AppData\Local\Temp\s12g.o
+__pfunctab 7A 0 ENTRY 0 functab dist/default/production\2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\2.X.production.o
+_Port_Config A0 0 BANK1 1 dataBANK1 dist/default/production\2.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_Interrupt_TimerCallbackFn 428 0 CODE 0 text5 dist/default/production\2.X.production.o
+__size_of__i1fptable 0 0 ABS 0 - dist/default/production\2.X.production.o
+i1fpbase 86 0 ENTRY 0 functab dist/default/production\2.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+Dio_WriteChannel@Level 73 0 COMMON 1 cstackCOMMON dist/default/production\2.X.production.o
+_ON_Lamp_Config 62 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+_Dio_WriteChannel 1EC 0 CODE 0 text2 dist/default/production\2.X.production.o
+_callbackTable 49 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+intlevel0 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+intlevel1 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+intlevel2 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+intlevel3 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+intlevel4 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+intlevel5 7A 0 ENTRY 0 functab C:\Users\mosta\AppData\Local\Temp\s12g.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\2.X.production.o
+__Hfunctab 8E 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/production\2.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\2.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\2.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\2.X.production.o
+__size_of_Interrupt_TimerCallbackFn 0 0 ABS 0 - dist/default/production\2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_GO_DONE FA 0 ABS 0 - dist/default/production\2.X.production.o
+__end_of_Dio_ReadChannel 2FA 0 CODE 0 text3 dist/default/production\2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\mosta\AppData\Local\Temp\s12g.o
+___stacklo 0 0 ABS 0 - C:\Users\mosta\AppData\Local\Temp\s12g.o
+Port_Init@Port_Dir_Ptr 66 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+__end_of_Dio_WriteChannel 28A 0 CODE 0 text2 dist/default/production\2.X.production.o
+_Dio_ConfigGroupChannel 20 0 BANK0 1 dataBANK0 dist/default/production\2.X.production.o
+Dio_ReadChannel@ChannelId 6A 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+__size_of_Dio_WriteChannel 0 0 ABS 0 - dist/default/production\2.X.production.o
+start_initialization 26 0 CODE 0 cinit dist/default/production\2.X.production.o
+_ACKSTAT 48E 0 ABS 0 - dist/default/production\2.X.production.o
+clear_ram0 408 0 CODE 0 clrtext dist/default/production\2.X.production.o
+__pcstackBANK0 66 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+_SSPADD 93 0 ABS 0 - dist/default/production\2.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\2.X.production.o
+_SSPCON 14 0 ABS 0 - dist/default/production\2.X.production.o
+Dio_WriteChannel@Port_Ptr 66 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+Dio_ReadChannel@Pin_Ptr 67 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+_TMR1IE 460 0 ABS 0 - dist/default/production\2.X.production.o
+_TMR1IF 60 0 ABS 0 - dist/default/production\2.X.production.o
+_TRISE1 449 0 ABS 0 - dist/default/production\2.X.production.o
+_TRISE2 44A 0 ABS 0 - dist/default/production\2.X.production.o
+Dio_WriteChannel@ChannelId 68 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+_Dio_ReadChannel 28A 0 CODE 0 text3 dist/default/production\2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\mosta\AppData\Local\Temp\s12g.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 7A 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 26 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_Interrupt_TimerCallbackFn 418 0 CODE 0 text5 dist/default/production\2.X.production.o
+Port_Init@Port_Ptr 68 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 20 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 20 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\2.X.production.o
+_ISR 390 0 CODE 0 text4 dist/default/production\2.X.production.o
+_RD4 44 0 ABS 0 - dist/default/production\2.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\2.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\2.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\2.X.production.o
+_RE1 49 0 ABS 0 - dist/default/production\2.X.production.o
+_RE2 4A 0 ABS 0 - dist/default/production\2.X.production.o
+__S0 214 0 ABS 0 - -
+__S1 B4 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_I2c_Configurations 3F 0 BANK0 1 dataBANK0 dist/default/production\2.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\2.X.production.o
+_Heater_Lamp_Config 5E 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+__end_of_ISR 3BA 0 CODE 0 text4 dist/default/production\2.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\mosta\AppData\Local\Temp\s12g.o
+__size_of_Dio_ReadChannel 0 0 ABS 0 - dist/default/production\2.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\2.X.production.o
+__pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_Gpt_ReloadValue 54 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+__pmaintext 34C 0 CODE 0 maintext dist/default/production\2.X.production.o
+__i1fptable 7C 0 ENTRY 0 functab dist/default/production\2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+i1fptable 7C 0 ENTRY 0 functab dist/default/production\2.X.production.o
+i1fptotal 1 0 ABS 0 - dist/default/production\2.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\2.X.production.o
+Port_Init@ConfigPtr 6A 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\2.X.production.o
+init_fetch0 3E2 0 CODE 0 inittext dist/default/production\2.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 20 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 72 0 CODE 0 cinit dist/default/production\2.X.production.o
+__Hintentry 20 0 CODE 0 intentry -
+fptable 7A 0 ENTRY 0 functab dist/default/production\2.X.production.o
+fptotal 0 0 ABS 0 - dist/default/production\2.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of__i1fptable 8E 0 ENTRY 0 functab dist/default/production\2.X.production.o
+__ptext1 8E 0 CODE 0 text1 dist/default/production\2.X.production.o
+__ptext2 1EC 0 CODE 0 text2 dist/default/production\2.X.production.o
+__ptext3 28A 0 CODE 0 text3 dist/default/production\2.X.production.o
+__ptext4 390 0 CODE 0 text4 dist/default/production\2.X.production.o
+__ptext5 418 0 CODE 0 text5 dist/default/production\2.X.production.o
+Dio_ReadChannel@x 66 0 BANK0 1 cstackBANK0 dist/default/production\2.X.production.o
+_Gpt_ThisConfig 5C 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 72 0 CODE 0 cinit dist/default/production\2.X.production.o
+__Lfunctab 7A 0 ENTRY 0 functab -
+__pidataBANK0 2FA 0 CODE 0 idataBANK0 dist/default/production\2.X.production.o
+__pidataBANK1 3BA 0 CODE 0 idataBANK1 dist/default/production\2.X.production.o
+__end_of_Port_Init 1EC 0 CODE 0 text1 dist/default/production\2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_Port_Init 0 0 ABS 0 - dist/default/production\2.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\2.X.production.o
+_I2c_Config 32 0 BANK0 1 dataBANK0 dist/default/production\2.X.production.o
+_SSPCON2 91 0 ABS 0 - dist/default/production\2.X.production.o
+_SSPSTAT 94 0 ABS 0 - dist/default/production\2.X.production.o
+__Hend_init 26 0 CODE 0 end_init -
+init_ram0 3EA 0 CODE 0 inittext dist/default/production\2.X.production.o
+__end_of_main 390 0 CODE 0 maintext dist/default/production\2.X.production.o
+_Port_Init 8E 0 CODE 0 text1 dist/default/production\2.X.production.o
+_ACKEN 48C 0 ABS 0 - dist/default/production\2.X.production.o
+_T1CON 10 0 ABS 0 - dist/default/production\2.X.production.o
+_SSPIF 63 0 ABS 0 - dist/default/production\2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\2.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\2.X.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\2.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__initialization 26 0 CODE 0 cinit dist/default/production\2.X.production.o
+__pbssBANK0 49 0 BANK0 1 bssBANK0 dist/default/production\2.X.production.o
+fpbase 0 0 ABS 0 - dist/default/production\2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 47 8E 1CD 2
+cstackCOMMON 1 70 70 A 1
+intentry 0 4 8 39 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 4B 1
+dataBANK1 1 A0 A0 14 1
+functab 0 3D 7A A 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
